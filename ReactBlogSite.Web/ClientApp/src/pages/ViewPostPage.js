@@ -49,7 +49,7 @@ function ViewPostPage() {
                 <div className="col-lg-8">
                     <h1 className="mt-4">{blogPost.title}</h1>
                     <hr />
-                    <p>Posted on {format(new Date(comment.date), 'cccc MMMM Lo, yyyy')} </p>         
+                    {blogPost.date && <p> Posted on {format(new Date(blogPost.date), 'cccc MMMM do, yyyy')}</p> }         
                     <hr />
                     <p>{blogPost.body}</p>
                     <hr />

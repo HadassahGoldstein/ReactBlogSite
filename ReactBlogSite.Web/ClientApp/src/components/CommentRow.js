@@ -10,7 +10,7 @@ function CommentRow({ comment }) {
                 <h5 className="mt-0">
                     {comment.name}
                     <small className="ml-1">
-                        {format(new Date(comment.date), 'cccc MMMM Lo, yyyy')}                        
+                        {format(new Date(comment.date), 'cccc MMMM do, yyyy')}                        
                     </small>
                 </h5>
                 {comment.text}

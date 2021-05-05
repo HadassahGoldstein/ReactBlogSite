@@ -18,7 +18,7 @@ function PostRow({ blogPost }) {
             </div>
             <div className="card-footer text-muted">
                 <div className="row">
-                    Posted on {format(new Date(blogPost.date), 'cccc MMMM Lo, yyyy')}
+                    Posted on {format(new Date(blogPost.date), 'cccc MMMM do, yyyy')}
                 </div>
                 <div className="row">
                     <h6> {blogPost.comments.length} comments</h6>
